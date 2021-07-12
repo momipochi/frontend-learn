@@ -1,0 +1,29 @@
+
+--basic tags
+h1~h6 are default fonts
+<p> for paragraph - is a block line
+
+block element - takes up an entire line menaing anything after it will be displayed in the next line
+
+inline element - takes up only the necessary amount of space so everything that is after will follow the previous ending point
+
+<a href="xxx.come"> for referencing a link by clicking on the text surrounded by this tag
+
+<a href="" target="_blank"> target blank is for creating a new tab when the link is clicked on 
+
+anything following a tag name, for example <a(tag) href(attribute tag)> is an attribute tag for which we can give them name or in this case a link for href
+
+--lists
+<ul> unordered lists with bullet points
+<ol> ordered lists with numbering
+
+--tables
+<table>
+	<thead>
+		<tr>
+			<th>
+	<tbody>
+		<tr>
+			<td>
+
+--forms
