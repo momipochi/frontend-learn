@@ -1,0 +1,117 @@
+/* global */
+body{
+    background: antiquewhite;
+    font: 15px/1.5 sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#line{
+    padding: 5px;
+    margin: 0;
+    background-color: #1f1f1f;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+}
+
+header li{
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+header li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+}
+
+main{
+    overflow: hidden;
+}
+
+.page-name{
+    padding: 0 10px 0 10px;
+}
+.page-name a{
+    text-decoration: none;
+    color: #111;
+    text-transform: uppercase;
+}
+
+
+.current-page a{
+    color: #FF975A;
+}
+
+footer{
+    background-color: #e8491d;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+/* home page */
+.sec-welcome{
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #e8491d;
+}
+
+/* boxes */
+
+.sec-body{
+    display: block;
+    overflow: hidden;
+}
+
+.box{
+    float: left;
+    text-align: center;
+    width: 31%;
+    padding: 10px;
+}
+.box img{
+    width: 100px;
+}
+
+/* share section */
+.sec-share h1{
+    padding: 5px;
+    margin: 0;
+    background-color: #35424a;
+    color: #fff;
+    text-align: center;
+}
+
+.row .logo-container{
+    text-align: center;
+    width: 30%;
+    float: left;
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+
+.logo-container img{
+    padding: 0;
+    margin: 0;
+    width: 75%;
+}
+
+@media (max-width: 768px){
+    .sec-body,
+    .sec-body .box
+    {
+        float: none;
+        width: 100%;
+    }
+
+    .box img,
+    .logo-container img
+    {
+        width: 50%;
+    }
+}
