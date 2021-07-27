@@ -2,10 +2,11 @@
 body{
     background: #282828;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     max-height: 100vh;
+    overflow: hidden;
 }
 
 *{
@@ -21,7 +22,9 @@ a{
 ul{
     list-style: none;
 }
-
+i{
+    font-size: 1.3rem;
+}
 input{
     color: #fff;
 
@@ -33,6 +36,14 @@ input:focus{
     color: red;
 
 }
+.content{
+    display: flex;
+}
+.main-content img{
+    width: 300px;
+    height: 200px;
+}
+
 
 /*header*/
 
@@ -91,23 +102,18 @@ input:focus{
     border-radius: 2px;
 }
 
+
 /* aside section */
 .aside-section {
     padding-left: 20px;
-    width: 20%;
+    width: 15%;
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: left;
     max-height: 90vh;
+    margin: 0;
 }
 
-/* .aside-section::-webkit-scrollbar{
-    width: 10px;
-} */
-/* .aside-section:hover ::-webkit-scrollbar-thumb{
-    width: 10px;
-    background: #999;
-} */
 
 .aside-section::-webkit-scrollbar{
     background: #282828;
@@ -124,25 +130,65 @@ input:focus{
 .aside-section li{
     display: flex;
     padding: 10px 0;
-    
+    justify-content: space-between;
 }
+.aside-section li:hover{
+    background: #999;
+}
+.aside-section a{
+    width: 100%;
+}
+
 .aside-section ul{
     border-bottom: #555 1px solid;
     padding-top: 15px;
+    width: 100%;
 }
 
-.aside-section i{
+.aside-section ul i{
     width: 10%;
     text-align: left;
 }
-.aside-section span{
+.aside-section ul span{
     width: 90%;
     text-align: left;
+}
+
+.aside-section div, p{
+    width: 100%;
 }
 
 .aside-section i + span{
     padding-left: 15px;
 }
+
+/*main content*/
+.main-content{
+    width: 80%;
+    display: flex;
+    overflow-y: scroll;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    justify-content: space-between;
+}
+.inner-content{
+}
+
+.inner-content-layer-1{
+    display: flex;
+
+}
+.inner-content-layer-2{
+    display: flex;
+}
+
+.inner-content-layer-2 a{
+    padding-right: 10px;
+}
+
 /*footer*/
 .main-footer{
     color: #999;
@@ -197,5 +243,4 @@ input:focus{
 .mic{
     padding: 0 10px;
 }
-
 
