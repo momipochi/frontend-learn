@@ -1,14 +1,16 @@
 //side icons
-const sideItems = document.querySelectorAll('a');
+const tabItems = document.querySelectorAll("a");
 
-
+//main contents
+const mainContents = document.querySelectorAll('.inner-content');
 
 function selectItem(e){
     removeBorder();
-
+    removeShow();
     addBorder(this);
 
-
+    console.log(this);
+    mainContents.classList.add('show');
 }
 
 function removeBorder(){
@@ -22,4 +24,7 @@ function addBorder(e){
     e.style.background = '#fff'
 }
 
-sideItems.forEach(item=>item.addEventListener('click',selectItem));
+
+console.log(mainContents);
+
+// tabItems.forEach(item => item.addEventListener('click',selectItem));

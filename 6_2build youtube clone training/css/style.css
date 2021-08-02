@@ -163,6 +163,19 @@ input:focus{
 }
 
 /*main content*/
+
+/* intial hide */
+#main-content-1,
+#main-content-2,
+#main-content-3
+{
+    display: none;
+}
+/* show content */
+.show{
+    display: block !important;
+}
+
 .main-content{
     width: 80%;
     display: flex;
