@@ -14,7 +14,7 @@ function selectItem(e){
 }
 
 function removeBorder(){
-    sideItems.forEach(item => {
+    tabItems.forEach(item => {
         item.style.background = "#fff";
     });
 }
@@ -25,6 +25,5 @@ function addBorder(e){
 }
 
 
-console.log(mainContents);
 
-// tabItems.forEach(item => item.addEventListener('click',selectItem));
+tabItems.forEach(item => item.addEventListener('click',selectItem));
