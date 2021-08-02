@@ -1,0 +1,54 @@
+body{
+    background: #999;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* tabs */
+.tabs .container{
+    display: flex;
+    justify-content: space-around;
+}
+.tabs .container > div:hover{
+    color: #111;
+    cursor: pointer;
+}
+
+/* main section */
+.main-section .container > div{
+    padding: 50px 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.main-section .container{
+    padding: 0 25%;
+}
+.main-section .container img{
+    width: 100px;
+    height: 100px;
+}
+
+/* initial hide */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content
+{
+    display: none;
+}
+/* shadow */
+.show{
+    display: block !important;
+}
