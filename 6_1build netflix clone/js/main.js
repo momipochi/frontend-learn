@@ -6,6 +6,7 @@ const tabContentItems = document.querySelectorAll('.tab-content-item');
 
 //functions
 function selectItem(e){
+    console.log(this);
     removeBorder();
     removeShow();
     //add border
@@ -29,6 +30,6 @@ function removeShow(){
 function addBorder(e){
     e.style.borderBottom = '#e50914 4px solid';
 }
-
+console.log(tabItems);
 //event listener
 tabItems.forEach(item => item.addEventListener('click',selectItem));
